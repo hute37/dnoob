@@ -1,5 +1,9 @@
 #!/bin/env hbase shell
 
+disable 'ut'
+drop 'ut'
+
+
 create 'ut', \
        {NAME => 'hk', VERSIONS => 50}, \
        {NAME => 'hs', VERSIONS => 50}, \
